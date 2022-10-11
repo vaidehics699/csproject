@@ -35,4 +35,25 @@ public class Course {
     public void setProfessorName(String professorName) {
         this.professorName = professorName;
     }
+
+    public boolean isThisCourseComputerScienceRelated(){
+        if(this.courseName.contains("CS")){
+            return true;
+        }
+        return false;
+    }
+
+    public boolean isCourseValid(){
+        if(this.courseId == -1){
+            return false;
+        }
+        return true;
+    }
+
+    public void makeCourseInValid(){
+        this.courseId = -1;
+    }
+
+
+
 }
