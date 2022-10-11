@@ -25,6 +25,13 @@ public class Office extends Room{
         this.employee = employee;
     }
 
+    public Office(int roomId, int capacity, String employee, int doors){
+        this.roomId = roomId;
+        this.capacity = capacity;
+        this.employee = employee;
+        this.noOfDoors = doors;
+    }
+
 
 
     public boolean checkIfEmployeeIsAssigned(){
@@ -42,5 +49,5 @@ public class Office extends Room{
     public void addEmployee(String employee){
         this.employee = employee;
     }
-    
+
 }
