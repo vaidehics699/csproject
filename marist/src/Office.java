@@ -24,4 +24,23 @@ public class Office extends Room{
         this.capacity = capacity;
         this.employee = employee;
     }
+
+
+
+    public boolean checkIfEmployeeIsAssigned(){
+        if(this.employee == null){
+            return true;
+        }
+        return false;
+    }
+    public int maximumCapacityOfOffice(){
+        return this.capacity;
+    }
+    public void removeEmployee(){
+        this.employee = null;
+    }
+    public void addEmployee(String employee){
+        this.employee = employee;
+    }
+    
 }
